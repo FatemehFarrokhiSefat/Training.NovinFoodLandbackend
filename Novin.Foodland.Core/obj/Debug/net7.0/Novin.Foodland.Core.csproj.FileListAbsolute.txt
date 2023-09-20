@@ -1,0 +1,11 @@
+C:\Classes\D_Jango\Foodland\Backend\Novin.FoodLand.Backend\Novin.Foodland.Core\bin\Debug\net7.0\Novin.Foodland.Core.deps.json
+C:\Classes\D_Jango\Foodland\Backend\Novin.FoodLand.Backend\Novin.Foodland.Core\bin\Debug\net7.0\Novin.Foodland.Core.dll
+C:\Classes\D_Jango\Foodland\Backend\Novin.FoodLand.Backend\Novin.Foodland.Core\bin\Debug\net7.0\Novin.Foodland.Core.pdb
+C:\Classes\D_Jango\Foodland\Backend\Novin.FoodLand.Backend\Novin.Foodland.Core\obj\Debug\net7.0\Novin.Foodland.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Classes\D_Jango\Foodland\Backend\Novin.FoodLand.Backend\Novin.Foodland.Core\obj\Debug\net7.0\Novin.Foodland.Core.AssemblyInfoInputs.cache
+C:\Classes\D_Jango\Foodland\Backend\Novin.FoodLand.Backend\Novin.Foodland.Core\obj\Debug\net7.0\Novin.Foodland.Core.AssemblyInfo.cs
+C:\Classes\D_Jango\Foodland\Backend\Novin.FoodLand.Backend\Novin.Foodland.Core\obj\Debug\net7.0\Novin.Foodland.Core.csproj.CoreCompileInputs.cache
+C:\Classes\D_Jango\Foodland\Backend\Novin.FoodLand.Backend\Novin.Foodland.Core\obj\Debug\net7.0\Novin.Foodland.Core.dll
+C:\Classes\D_Jango\Foodland\Backend\Novin.FoodLand.Backend\Novin.Foodland.Core\obj\Debug\net7.0\refint\Novin.Foodland.Core.dll
+C:\Classes\D_Jango\Foodland\Backend\Novin.FoodLand.Backend\Novin.Foodland.Core\obj\Debug\net7.0\Novin.Foodland.Core.pdb
+C:\Classes\D_Jango\Foodland\Backend\Novin.FoodLand.Backend\Novin.Foodland.Core\obj\Debug\net7.0\ref\Novin.Foodland.Core.dll

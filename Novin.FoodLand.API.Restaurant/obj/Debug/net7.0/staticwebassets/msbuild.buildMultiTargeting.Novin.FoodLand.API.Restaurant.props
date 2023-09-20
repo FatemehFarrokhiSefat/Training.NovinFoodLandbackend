@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Novin.FoodLand.API.Restaurant.props" />
+</Project>

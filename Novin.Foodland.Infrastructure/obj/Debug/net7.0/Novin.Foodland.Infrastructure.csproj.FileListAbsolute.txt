@@ -1,0 +1,15 @@
+C:\Classes\D_Jango\Foodland\Backend\Novin.FoodLand.Backend\Novin.Foodland.Infrastructure\bin\Debug\net7.0\Novin.Foodland.Infrastructure.deps.json
+C:\Classes\D_Jango\Foodland\Backend\Novin.FoodLand.Backend\Novin.Foodland.Infrastructure\bin\Debug\net7.0\Novin.Foodland.Infrastructure.dll
+C:\Classes\D_Jango\Foodland\Backend\Novin.FoodLand.Backend\Novin.Foodland.Infrastructure\bin\Debug\net7.0\Novin.Foodland.Infrastructure.pdb
+C:\Classes\D_Jango\Foodland\Backend\Novin.FoodLand.Backend\Novin.Foodland.Infrastructure\bin\Debug\net7.0\Novin.Foodland.Core.dll
+C:\Classes\D_Jango\Foodland\Backend\Novin.FoodLand.Backend\Novin.Foodland.Infrastructure\bin\Debug\net7.0\Novin.Foodland.Core.pdb
+C:\Classes\D_Jango\Foodland\Backend\Novin.FoodLand.Backend\Novin.Foodland.Infrastructure\obj\Debug\net7.0\Novin.Foodland.Infrastructure.csproj.AssemblyReference.cache
+C:\Classes\D_Jango\Foodland\Backend\Novin.FoodLand.Backend\Novin.Foodland.Infrastructure\obj\Debug\net7.0\Novin.Foodland.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Classes\D_Jango\Foodland\Backend\Novin.FoodLand.Backend\Novin.Foodland.Infrastructure\obj\Debug\net7.0\Novin.Foodland.Infrastructure.AssemblyInfoInputs.cache
+C:\Classes\D_Jango\Foodland\Backend\Novin.FoodLand.Backend\Novin.Foodland.Infrastructure\obj\Debug\net7.0\Novin.Foodland.Infrastructure.AssemblyInfo.cs
+C:\Classes\D_Jango\Foodland\Backend\Novin.FoodLand.Backend\Novin.Foodland.Infrastructure\obj\Debug\net7.0\Novin.Foodland.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Classes\D_Jango\Foodland\Backend\Novin.FoodLand.Backend\Novin.Foodland.Infrastructure\obj\Debug\net7.0\Novin.Foodland.Infrastructure.csproj.CopyComplete
+C:\Classes\D_Jango\Foodland\Backend\Novin.FoodLand.Backend\Novin.Foodland.Infrastructure\obj\Debug\net7.0\Novin.Foodland.Infrastructure.dll
+C:\Classes\D_Jango\Foodland\Backend\Novin.FoodLand.Backend\Novin.Foodland.Infrastructure\obj\Debug\net7.0\refint\Novin.Foodland.Infrastructure.dll
+C:\Classes\D_Jango\Foodland\Backend\Novin.FoodLand.Backend\Novin.Foodland.Infrastructure\obj\Debug\net7.0\Novin.Foodland.Infrastructure.pdb
+C:\Classes\D_Jango\Foodland\Backend\Novin.FoodLand.Backend\Novin.Foodland.Infrastructure\obj\Debug\net7.0\ref\Novin.Foodland.Infrastructure.dll

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Novin.Foodland.Core/1.0.0": {
+        "runtime": {
+          "Novin.Foodland.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Novin.Foodland.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
