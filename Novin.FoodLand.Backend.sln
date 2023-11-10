@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Novin.Foodland.Infrastructu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Novin.FoodLand.API.Restaurant", "Novin.FoodLand.API.Restaurant\Novin.FoodLand.API.Restaurant.csproj", "{A29095A8-C1C2-423C-A4A7-027907107275}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Novin.FoodLand.API.Users", "Novin.FoodLand.API.Users\Novin.FoodLand.API.Users.csproj", "{78604A58-6A19-4D8A-A099-9C811A7CF15C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Novin.FoodLand.API.Users", "Novin.FoodLand.API.Users\Novin.FoodLand.API.Users.csproj", "{78604A58-6A19-4D8A-A099-9C811A7CF15C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

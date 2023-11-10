@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "Novin.FoodLand.API.Security/1.0.0": {
         "dependencies": {
+          "Ardalis.GuardClauses": "4.1.1",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.10",
           "Microsoft.AspNetCore.OpenApi": "7.0.10",
           "Microsoft.EntityFrameworkCore.Design": "7.0.10",
@@ -16,6 +17,14 @@
         },
         "runtime": {
           "Novin.FoodLand.API.Security.dll": {}
+        }
+      },
+      "Ardalis.GuardClauses/4.1.1": {
+        "runtime": {
+          "lib/net7.0/Ardalis.GuardClauses.dll": {
+            "assemblyVersion": "4.1.1.0",
+            "fileVersion": "4.1.1.0"
+          }
         }
       },
       "Azure.Core/1.24.0": {
@@ -704,6 +713,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Ardalis.GuardClauses/4.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+UcJ2s+gf2wMNrwadCaHZV2DMcGgBU1t22A+jm40P4MHQRLy9hcleGy5xdVWd4dXZPa5Vlp4TG5xU2rhoDYrBA==",
+      "path": "ardalis.guardclauses/4.1.1",
+      "hashPath": "ardalis.guardclauses.4.1.1.nupkg.sha512"
     },
     "Azure.Core/1.24.0": {
       "type": "package",

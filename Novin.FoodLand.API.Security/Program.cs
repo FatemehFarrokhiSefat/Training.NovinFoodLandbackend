@@ -1,9 +1,13 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using Ardalis.GuardClauses;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Novin.Foodland.Core.Entities;
 using Novin.Foodland.Core.Enums;
+using Novin.Foodland.Core.Exceptions;
 using Novin.Foodland.Infrastructure.Data;
+using Novin.Foodland.Infrastructure.ExceptionHandlers;
 using Novin.Foodland.Infrastructure.Security;
 using Novin.FoodLand.API.Security.DTOs;
 using System.IdentityModel.Tokens.Jwt;
@@ -19,14 +23,34 @@ var app = builder.Build();
 SecurityServices.UseServices(app);
 
 
-
-app.MapPost("/signup", async (NovinFoodlandDB db, ApplicationUser user) =>
+app.MapPost("/signup", async (NovinFoodlandDB db, RegisterRequestDto register) =>
 {
     var rg = new Random();
+
+    var user = new ApplicationUser();
+    user.Username = register.Username;
+    Guard.Against.NullOrEmpty(user.Username,message:"نام کاربری نمیتواند تهی باشد");
+
+    if(register.Password.Length<4)
+    {
+        throw new InvalidPasswordException();
+    }
+    user.Password= register.Password;
+    user.Fullname= register.Fullname;
+    user.Email= register.Email;
+    user.Type = register.Type;
+
     user.VerificationCode = rg .Next(100000,999999).ToString();
     //send sms
     await db.ApplicationUsers.AddAsync(user);
-    await db.SaveChangesAsync();
+    try
+    {
+        await db.SaveChangesAsync();
+    }
+    catch(Exception ex)
+    {
+        DBExceptionHandler.HandleIt(ex);
+    }
     return Results.Ok();
 });
 

@@ -1,10 +1,14 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
+using Novin.Foodland.Core.Exceptions;
+using Novin.Foodland.Core.Interfaces;
 using Novin.Foodland.Infrastructure.Data;
 using System;
 using System.Collections.Generic;
@@ -55,6 +59,19 @@ namespace Novin.Foodland.Infrastructure.Security
                 app.UseSwaggerUI();
             }
             app.UseHttpsRedirection();
+
+            app.UseExceptionHandler(e => e.Run(async context =>
+            {
+                var exception = context.Features
+                .Get<IExceptionHandlerPathFeature>()
+                .Error;
+                var response = new
+                {
+                    Type=(exception is IDataException) ? "داده ای!":"سیستمی",
+                    error = exception.Message
+                };
+                await context.Response.WriteAsJsonAsync(response);
+            }));
         }
     }
 }
