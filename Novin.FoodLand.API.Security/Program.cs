@@ -38,8 +38,12 @@ app.MapPost("/signup", async (NovinFoodlandDB db, RegisterRequestDto register) =
     user.Password= register.Password;
     user.Fullname= register.Fullname;
     user.Email= register.Email;
+    if(register.Email==string.Empty)
+    {
+        throw new InvalidEmailException();
+    }
     user.Type = register.Type;
-
+ 
     user.VerificationCode = rg .Next(100000,999999).ToString();
     //send sms
     await db.ApplicationUsers.AddAsync(user);
