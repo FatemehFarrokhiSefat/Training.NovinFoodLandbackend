@@ -12,14 +12,15 @@ SecurityServices.UseServices(app);
 
 app.MapPost("/list", async (NovinFoodlandDB db) =>
 {
+    Thread.Sleep(3000);
     return Results.Ok(db.ApplicationUsers
         .ToList());
-});
+}).RequireAuthorization();
 
 app.MapPost("/alist", async (NovinFoodlandDB db,ListRequestDTO listRequest) =>
 {
     return Results.Ok(db.ApplicationUsers
         .ToList());
-});
+}).RequireAuthorization();
 
 app.Run();

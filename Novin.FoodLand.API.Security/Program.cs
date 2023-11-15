@@ -138,4 +138,32 @@ app.MapPost("/adminsignin", async (NovinFoodlandDB db, LoginDTo login) =>
         Token = new JwtSecurityTokenHandler().WriteToken(token),
     });
 });
+
+app.MapGet("/admincheck", (ClaimsPrincipal user) => 
+{
+    if(user.Claims.FirstOrDefault(m=>m.Type=="Type")?.Value=="AdminSystem")
+    {
+        return true;
+    }
+    return false;
+}).RequireAuthorization();
+
+app.MapGet("/customercheck", (ClaimsPrincipal user) =>
+{
+    if (user.Claims.FirstOrDefault(m => m.Type == "Type")?.Value == "Customer")
+    {
+        return true;
+    }
+    return false;
+}).RequireAuthorization();
+
+app.MapGet("/restaurantOwnercheck", (ClaimsPrincipal user) =>
+{
+    if (user.Claims.FirstOrDefault(m => m.Type == "Type")?.Value == "RestaurantOwner")
+    {
+        return true;
+    }
+    return false;
+}).RequireAuthorization();
+
 app.Run();
